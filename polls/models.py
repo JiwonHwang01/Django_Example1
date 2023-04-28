@@ -1,6 +1,9 @@
 from django.db import models
 
 # Create your models here.
+# 모델을 생성할 떄는 model.py와 admin.py를 모두 수정해줘야 한다.
+# 두 파일 모두 수정했다면 cmd에서 migrate 하여 DB에 반영해야함
+
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
